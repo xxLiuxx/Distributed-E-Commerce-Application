@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shop-gateway" />
+        <module name="shop-registry" />
+        <module name="shop-auth-service" />
+        <module name="shop-cart" />
+        <module name="shop-item-service" />
+        <module name="shop-upload" />
+        <module name="shop-search" />
+        <module name="shop-goods-web" />
+        <module name="shop-user-interface" />
+        <module name="shop-auth-common" />
+        <module name="shop-item-interface" />
+        <module name="shop-order" />
+        <module name="shop-user-service" />
+        <module name="shop-common" />
+        <module name="shop-sms" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="9" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ProjectShop" options="-parameters" />
+      <module name="shop-auth-common" options="-parameters" />
+      <module name="shop-auth-service" options="-parameters" />
+      <module name="shop-cart" options="-parameters" />
+      <module name="shop-common" options="-parameters" />
+      <module name="shop-gateway" options="-parameters" />
+      <module name="shop-goods-web" options="-parameters" />
+      <module name="shop-item" options="-parameters" />
+      <module name="shop-item-interface" options="-parameters" />
+      <module name="shop-item-service" options="-parameters" />
+      <module name="shop-order" options="-parameters" />
+      <module name="shop-registry" options="-parameters" />
+      <module name="shop-search" options="-parameters" />
+      <module name="shop-sms" options="-parameters" />
+      <module name="shop-upload" options="-parameters" />
+      <module name="shop-user" options="-parameters" />
+      <module name="shop-user-interface" options="-parameters" />
+      <module name="shop-user-service" options="-parameters" />
+    </option>
+  </component>
+</project>

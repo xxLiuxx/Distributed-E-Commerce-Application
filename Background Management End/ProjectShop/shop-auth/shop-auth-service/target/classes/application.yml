@@ -1,0 +1,20 @@
+server:
+  port: 8087
+spring:
+  application:
+    name: shop-auth-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+    registry-fetch-interval-seconds: 5
+  instance:
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+shop:
+  jwt:
+    secret: leyou@Login(Auth}*^31)&heiMa% # 登录校验的密钥
+    pubKeyPath: /Users/liuyuchen/Desktop/ShopResource/rsa/rsa.pub # 公钥地址
+    priKeyPath: /Users/liuyuchen/Desktop/ShopResource/rsa/rsa.pri # 私钥地址
+    expire: 30 # 过期时间,单位分钟
+    cookieName: SHOP_AUTH

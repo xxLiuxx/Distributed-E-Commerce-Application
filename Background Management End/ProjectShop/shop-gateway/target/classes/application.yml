@@ -1,0 +1,38 @@
+server:
+  port: 10010
+
+spring:
+  application:
+    name: shop-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+    registry-fetch-interval-seconds: 5
+
+zuul:
+  routes:
+    shop-item-service: /item/**
+    search-service: /search/**
+    shop-user-service: /user/**
+    shop-auth-service: /auth/**
+    shop-cart-service: /cart/**
+    shop-order-service: /order/**
+  prefix: /api
+  retryable: true
+  add-host-header: true
+  sensitive-headers:
+shop:
+  jwt:
+    pubKeyPath: /Users/liuyuchen/Desktop/ShopResource/rsa/rsa.pub # 公钥地址
+    cookieName: SHOP_AUTH
+  filter:
+    allowPaths:
+      - /api/auth
+      - /api/search
+      - /api/user/register
+      - /api/user/check
+      - /api/user/code
+      - /api/item
+

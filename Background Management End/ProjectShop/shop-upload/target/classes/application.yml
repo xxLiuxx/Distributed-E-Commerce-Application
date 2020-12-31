@@ -1,0 +1,25 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: shop-upload
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+
+fdfs:
+  so-timeout: 1500
+  connect-timeout: 600
+  thumb-image:
+    height: 60
+    width: 60
+  tracker-list: 192.168.31.196:22122

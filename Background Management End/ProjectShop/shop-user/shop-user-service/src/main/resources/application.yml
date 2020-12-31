@@ -1,0 +1,28 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: shop-user-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/leyou?useSSL=false
+    username: root
+    password: supreme150211
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 192.168.31.196
+    port: 6379
+  rabbitmq:
+    host: 192.168.31.196
+    port: 5672
+    username: yuchen
+    password: 150211
+    virtual-host: /shop
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+  instance:
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+mybatis:
+  type-aliases-package: com.leyou.user.pojo

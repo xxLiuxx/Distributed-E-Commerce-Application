@@ -1,0 +1,15 @@
+server:
+  port: 8086
+spring:
+  rabbitmq:
+    host: 192.168.31.196
+    port: 5672
+    username: yuchen
+    password: 150211
+    virtual-host: /shop
+shop:
+  sms:
+    accessKeyId: JWffwFJIwada # 你自己的accessKeyId
+    accessKeySecret: aySRliswq8fe7rF9gQyy1Izz4MQ # 你自己的AccessKeySecret
+    signName: 乐优商城 # 签名名称
+    verifyCodeTemplate: SMS_133976814 # 模板名称
